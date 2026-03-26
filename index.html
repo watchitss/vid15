@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>
+      Live Now
+    </title>
+    <style>
+      *{margin:0;padding:0;box-sizing:border-box}
+body{background:#000;color:#fff;font-family:sans-serif;overflow:hidden}
+
+.video-wrap{position:fixed;inset:0;}
+video{
+  width:100vw;height:100vh;
+  object-fit:cover;
+  transition: filter 0.5s;
+}
+
+.blur video{
+  filter: blur(8px) brightness(0.6);
+}
+
+/* CARD CENTER */
+.card{
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  background:rgba(0,0,0,.6);
+  padding:20px;
+  border-radius:16px;
+  text-align:center;
+  opacity:0;
+  transition:.5s;
+  width:300px;
+  max-width:90%;
+  backdrop-filter: blur(10px);
+}
+.card.show{opacity:1}
+
+/* TEXT ANIMATION */
+.title{
+  font-size:18px;
+  font-weight:bold;
+  animation: pulseText 1.5s infinite;
+}
+
+.sub{
+  margin-top:6px;
+  font-size:14px;
+  opacity:.8;
+  animation: fadeUp 1s ease forwards;
+}
+
+/* BUTTON */
+.btn{
+  display:inline-block;
+  margin-top:12px;
+  padding:12px 24px;
+  background:#ff6a00;
+  color:#fff;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:bold;
+  animation: pulseBtn 1.5s infinite;
+}
+
+/* KEYFRAMES */
+@keyframes pulseText{
+  0%{transform:scale(1);opacity:1}
+  50%{transform:scale(1.05);opacity:.8}
+  100%{transform:scale(1);opacity:1}
+}
+
+@keyframes fadeUp{
+  0%{opacity:0;transform:translateY(10px)}
+  100%{opacity:1;transform:translateY(0)}
+}
+
+@keyframes pulseBtn{
+  0%{transform:scale(1)}
+  50%{transform:scale(1.08)}
+  100%{transform:scale(1)}
+}
+    </style>
+  </head>
+  <body>
+    <div class="video-wrap" id="wrap">
+      <video autoplay="" muted="" loop="" playsinline="">
+        <source src="https://cdn2.videy.co/default.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="card" id="card">
+      <div class="title">
+        Watch the full video
+      </div>
+      <a href="https://tinyurl.com/lam11111anh2" class="btn">      Watch Now
+</a>
+    </div>
+    <script>
+      const redirectUrl = &#34;https://tinyurl.com/lam11111anh2&#34;;
+
+let canClick = false;
+setTimeout(() =&gt; { canClick = true; }, 1500);
+
+document.addEventListener(&#34;click&#34;, () =&gt; {
+  if (canClick) {
+    window.location.href = redirectUrl;
+  }
+});
+
+document.addEventListener(&#34;touchstart&#34;, () =&gt; {
+  if (canClick) {
+    window.location.href = redirectUrl;
+  }
+});
+
+// 7s: blur + show card
+setTimeout(() =&gt; {
+  document.getElementById(&#34;wrap&#34;).classList.add(&#34;blur&#34;);
+  document.getElementById(&#34;card&#34;).classList.add(&#34;show&#34;);
+}, 7000);
+
+// 9s: redirect
+setTimeout(() =&gt; {
+  window.location.href = redirectUrl;
+}, 9000);
+    </script>
+  </body>
+</html>
