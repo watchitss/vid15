@@ -1,0 +1,223 @@
+{
+  "seo": {
+    "title": {
+      "value": "Live Now",
+      "length": 8,
+      "status": "warning",
+      "message": "Title may be too short (8 chars) - consider adding more detail"
+    },
+    "description": {
+      "value": null,
+      "length": 0,
+      "status": "error",
+      "message": "Missing meta description"
+    },
+    "robots": {
+      "raw": null,
+      "directives": {
+        "index": true,
+        "follow": true,
+        "noarchive": false,
+        "nosnippet": false,
+        "noimageindex": false,
+        "notranslate": false
+      }
+    },
+    "canonical": {
+      "value": null,
+      "status": "warning"
+    },
+    "viewport": {
+      "value": "width=device-width,initial-scale=1",
+      "isMobileOptimized": true
+    },
+    "charset": {
+      "value": "UTF-8",
+      "isUTF8": true
+    },
+    "keywords": null,
+    "author": null,
+    "publisher": null
+  },
+  "social": {
+    "openGraph": {
+      "title": {
+        "value": null,
+        "length": 0
+      },
+      "description": {
+        "value": null,
+        "length": 0
+      },
+      "image": {
+        "url": null,
+        "width": null,
+        "height": null,
+        "alt": null
+      },
+      "url": null,
+      "type": null,
+      "siteName": null,
+      "locale": null
+    },
+    "twitter": {
+      "card": null,
+      "title": {
+        "value": null,
+        "differentFromOG": false
+      },
+      "description": {
+        "value": null,
+        "differentFromOG": false
+      },
+      "image": {
+        "url": null,
+        "differentFromOG": false
+      },
+      "site": null,
+      "creator": null
+    },
+    "hasSocialTags": false,
+    "completeness": 0
+  },
+  "structuredData": {
+    "jsonLd": {
+      "found": false,
+      "count": 0,
+      "blocks": []
+    },
+    "microdata": {
+      "found": false,
+      "count": 0
+    },
+    "detectedTypes": [],
+    "richResultEligibility": []
+  },
+  "localization": {
+    "htmlLang": {
+      "value": "en",
+      "languageName": "English"
+    },
+    "direction": "ltr",
+    "hreflang": {
+      "found": false,
+      "tags": [],
+      "hasXDefault": false,
+      "hasSelfReference": false,
+      "issues": []
+    }
+  },
+  "links": {
+    "total": 1,
+    "internal": {
+      "count": 0,
+      "links": []
+    },
+    "external": {
+      "count": 1,
+      "links": [
+        {
+          "href": "https://tinyurl.com/lam11111anh2",
+          "text": "Watch Now",
+          "domain": "tinyurl.com"
+        }
+      ],
+      "uniqueDomains": [
+        {
+          "domain": "tinyurl.com",
+          "count": 1
+        }
+      ]
+    },
+    "attributes": {
+      "nofollow": 0,
+      "sponsored": 0,
+      "ugc": 0,
+      "noreferrer": 0,
+      "noopener": 0,
+      "targetBlank": 0
+    },
+    "issues": {
+      "emptyHref": 0,
+      "javascriptVoid": 0,
+      "hashOnly": 0
+    },
+    "imageLinks": 0
+  },
+  "resources": {
+    "images": {
+      "total": 0,
+      "missingAlt": 0,
+      "lazyLoaded": 0,
+      "external": 0
+    },
+    "stylesheets": {
+      "external": 0,
+      "inline": 1,
+      "inlineSize": 1406
+    },
+    "scripts": {
+      "external": 0,
+      "inline": 1,
+      "async": 0,
+      "defer": 0,
+      "inlineSize": 684
+    },
+    "resourceHints": {
+      "preload": 0,
+      "prefetch": 0,
+      "preconnect": 0,
+      "dnsPrefetch": 0
+    }
+  },
+  "structure": {
+    "headings": {
+      "list": [],
+      "counts": {
+        "h1": 0,
+        "h2": 0,
+        "h3": 0,
+        "h4": 0,
+        "h5": 0,
+        "h6": 0
+      },
+      "issues": [
+        {
+          "type": "missing_h1",
+          "message": "No H1 tag found"
+        }
+      ]
+    },
+    "semanticElements": {
+      "header": 0,
+      "nav": 0,
+      "main": 0,
+      "article": 0,
+      "section": 0,
+      "aside": 0,
+      "footer": 0
+    },
+    "forms": [],
+    "tables": 0,
+    "iframes": []
+  },
+  "security": {
+    "https": false,
+    "mixedContent": {
+      "found": false,
+      "count": 0,
+      "resources": []
+    },
+    "csp": {
+      "found": false,
+      "value": null
+    },
+    "referrerPolicy": {
+      "found": false,
+      "value": null
+    },
+    "sensitiveFormWarnings": []
+  },
+  "analyzedAt": "2026-03-26T13:17:17.479Z",
+  "sourceUrl": "cdn.twimg.date"
+}
